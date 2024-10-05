@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,300&display=swap');
+
+:root{ 
+   --gradient :linear-gradient(#e66465, #9198e5);
+
+}
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "poppins" , sans-serif;
+}
+body{ 
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(#e66465, #9198e5);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.side-bar{ 
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    left: -310px;
+    justify-content: left;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4);
+    transition: all 0.2s linear;
+
+
+
+}
+.side-bar  > div , 
+.side-bar > header { 
+    width: 100%;
+}
+
+.side-bar header { 
+    padding: 15px 0;
+    justify-content: space-around;
+    display: flex;
+    box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.4);
+    position: relative;
+    
+}
+
+.side-bar h1{ 
+    font-weight: 500;
+    align-self: center;
+
+}
+
+.btn-close { 
+    align-self: center;
+
+}
+.btn-close label i{ 
+    transition: all 0.3s ease;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    
+}
+.btn-close label i:hover{ 
+    color: rgb(255, 255, 255);
+
+}
+
+.side-bar li  { 
+    display: block;
+    width: 100%;
+    padding: 20px 0 20px 25px;
+    border: 1px solid rgba(255,255,255,0);
+ 
+}
+
+.side-bar li .menu-icon{ 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-bar  li:hover{ 
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    border-left:1px solid rgba(255, 255, 255, 0.8); ;
+    display: block;
+    width: 100%;
+    padding: 20px 0 20px 25px;
+}
+
+.side-bar li a{ 
+    text-decoration: none; 
+    margin-left: 8px; 
+    font-size: 20px;
+    
+}
+
+.side-bar .socials{ 
+    display: flex;
+    justify-content: center;
+
+}
+.side-bar .socials .icon{ 
+
+color: white;
+font-size: 25px;
+margin: 10px;
+
+}
+
+input{ 
+    display: none;
+
+}
+
+.main-box{ 
+    transition: all 0.3s linear;
+    height: 100%;
+    
+
+}
+
+
+.main-box  .btn_open{ 
+    
+    display: inline-block;
+    font-size: 25PX;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    align-items: center;
+    z-index: 1;
+    cursor:pointer;
+    transition:  all 0.3 linear;
+
+}
+
+.main-box  .btn_open:hover{ 
+    font-size: 28px;
+}
+
+
+#check:checked ~ .side-bar{
+    left: 0;
+
+}
+
+#check:checked  ~ .btn_open{ 
+    opacity: 0;
+
+}
+.btn-close{ 
+    transition: all 0.3s ease;
+}
+.btn-close:hover{ 
+    color: white;
+}
+
+.center-content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#origami { 
+    width: 100px;
+    height: 100px;
+    background-image: url('./images/Origami.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+#center-title{ 
+    position: relative;
+}
+#center-title::after{
+    content: "By Merouane";
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    bottom: -16px;
+    left: -8px;
+    width: 105px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
