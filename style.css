@@ -15,11 +15,17 @@ body{
     height: 100vh;
     display: flex;
     background: linear-gradient(#e66465, #9198e5);
-    background-position: center;
-    background-size: cover;
     justify-content: center;
     align-items: center;
+
 }
+
+.second-color { 
+    background: linear-gradient(#df3a28, #a3c833);
+
+
+}
+
 
 
 .side-bar{ 
